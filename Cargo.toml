@@ -1,0 +1,25 @@
+[package]
+name = "stateful_macro_rules"
+version = "0.2.0"
+authors = ["Jun Wu <quark@lihdd.net>"]
+edition = "2018"
+license = "MIT"
+description = "Generate macro_rules macros that have states."
+keywords = ["macro_rules", "stateful"]
+repository = "https://github.com/quark-zju/stateful_macro_rules"
+categories = ["development-tools::procedural-macro-helpers"]
+readme = "README.md"
+include = [
+    "src/*.rs",
+    "Cargo.toml",
+]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+
+[features]
+debug = []

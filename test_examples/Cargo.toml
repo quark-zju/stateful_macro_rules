@@ -1,0 +1,11 @@
+[package]
+name = "test_examples"
+version = "0.1.0"
+authors = ["Jun Wu <quark@lihdd.net>"]
+edition = "2018"
+
+[lib]
+path = "test_examples.rs"
+
+[dependencies]
+macro_examples = { path = "macro_examples" }
