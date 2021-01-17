@@ -1,6 +1,7 @@
 # stateful_macro_rules
 
 [![Documentation](https://docs.rs/stateful_macro_rules/badge.svg)](https://docs.rs/stateful_macro_rules)
+![build](https://github.com/quark-zju/stateful_macro_rules/workflows/build/badge.svg)
 
 Rust `macro_rules!` with states.
 
