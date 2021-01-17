@@ -32,6 +32,7 @@ fn test_draw() {
 fn test_doc_fields() {
     doc_fields! {
         #[allow(dead_code)]
+        #[derive(Default)]
         struct Pos {
             /// Line index, starting from 1.
             pub line: usize,
@@ -42,7 +43,7 @@ fn test_doc_fields() {
         }
     }
 
-    // let p = Pos::default();
+    let _p = Pos::default();
     let d = Pos::doc();
     assert_eq!(
         d.into_iter().collect::<Vec<_>>(),
