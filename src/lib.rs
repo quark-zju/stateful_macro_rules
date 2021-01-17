@@ -151,8 +151,7 @@ pub(crate) fn stateful_macro_rules_fallible(input: TokenStream) -> Result<TokenS
                 rule.append_rule(pat.stream(), Some(state.stream()), body.stream())?;
             }
 
-            // fs_write_expanded(path). write expanded macro to a specific file for debugging
-            // purpose.
+            // debug; write expanded macro to stderr for debugging purpose.
             #[cfg(feature = "debug")]
             [I(i)] if i.to_string() == "debug" => {
                 debug = true;
